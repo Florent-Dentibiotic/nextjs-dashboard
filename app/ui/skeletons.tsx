@@ -1,12 +1,11 @@
 // Loading animation
 const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent'
 
 export function CardSkeleton() {
   return (
     <div
-      className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}
-    >
+      className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}>
       <div className="flex p-4">
         <div className="h-5 w-5 rounded-md bg-gray-200" />
         <div className="ml-2 h-6 w-16 rounded-md bg-gray-200 text-sm font-medium" />
@@ -15,7 +14,7 @@ export function CardSkeleton() {
         <div className="h-7 w-20 rounded-md bg-gray-200" />
       </div>
     </div>
-  );
+  )
 }
 
 export function CardsSkeleton() {
@@ -26,7 +25,7 @@ export function CardsSkeleton() {
       <CardSkeleton />
       <CardSkeleton />
     </>
-  );
+  )
 }
 
 export function RevenueChartSkeleton() {
@@ -41,7 +40,7 @@ export function RevenueChartSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export function InvoiceSkeleton() {
@@ -56,14 +55,13 @@ export function InvoiceSkeleton() {
       </div>
       <div className="mt-2 h-4 w-12 rounded-md bg-gray-200" />
     </div>
-  );
+  )
 }
 
 export function LatestInvoicesSkeleton() {
   return (
     <div
-      className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}
-    >
+      className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}>
       <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
       <div className="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4">
         <div className="bg-white px-6">
@@ -79,7 +77,7 @@ export function LatestInvoicesSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default function DashboardSkeleton() {
@@ -99,7 +97,7 @@ export default function DashboardSkeleton() {
         <LatestInvoicesSkeleton />
       </div>
     </>
-  );
+  )
 }
 
 export function TableRowSkeleton() {
@@ -136,7 +134,7 @@ export function TableRowSkeleton() {
         </div>
       </td>
     </tr>
-  );
+  )
 }
 
 export function InvoicesMobileSkeleton() {
@@ -160,7 +158,7 @@ export function InvoicesMobileSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export function InvoicesTableSkeleton() {
@@ -196,8 +194,7 @@ export function InvoicesTableSkeleton() {
                 </th>
                 <th
                   scope="col"
-                  className="relative pb-4 pl-3 pr-6 pt-2 sm:pr-6"
-                >
+                  className="relative pb-4 pl-3 pr-6 pt-2 sm:pr-6">
                   <span className="sr-only">Edit</span>
                 </th>
               </tr>
@@ -214,5 +211,5 @@ export function InvoicesTableSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
